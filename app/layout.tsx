@@ -22,7 +22,7 @@ export default function RootLayout({
           <body className={`${font.className} bg-base-200`}>
               <div><Navbar /></div>
               <div>{children}</div>
-              <div><Footer /></div>
+              {/* <div><Footer /></div> */}
               <Progress />
           </body>
     </html>

@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import NavItems from "./nav-items";
-import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { NavMenu } from "./navbar-menu";
 
 function Navbar() {
 
@@ -28,30 +28,16 @@ function Navbar() {
     }
 
     return (
-        <nav>
-            <div className={`${hasScrolled ? "bg-base-200" : "bg-transparent"} w-screen transition ease-in-out duration-300 mb-[68px] fixed`}>
-                <div className="navbar container mx-auto">
-                    <div className="navbar-start">
-                        <div className="dropdown">
-                            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                            </label>
-                            <NavItems className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-fit" />
-                        </div>
-                        <a className="normal-case text-xl">
-                            <Image src="/logo.png" height={38} width={141} alt="Logo" />
-                        </a>
-                    </div>
-                    <div className="navbar-center hidden lg:flex">
-                        <NavItems className="menu menu-horizontal px-1" />
-                    </div>
-                    <div className="navbar-end">
-                        {/* <Link href="/" target="_blank" className="btn btn-primary text-neutral-100 normal-case">Help Desk</Link> */}
-                        <Link href="/" target="_blank" className="btn btn-primary text-neutral-100 normal-case">Join Us</Link>
-                    </div>
+        <div className={cn("transition ease-in-out duration-300 fixed w-full py-6", hasScrolled ? "bg-foreground" : "bg-transparent")}>
+            <div className="container mx-auto">
+                <div className="float-left">
+                    <Image src="/logo.png" height={38} width={141} alt="Logo" />
+                </div>
+                <div className="float-right">
+                    <NavMenu />
                 </div>
             </div>
-        </nav>
+        </div>
     )
 }
 
