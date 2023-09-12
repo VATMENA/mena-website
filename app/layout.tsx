@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-      <html data-theme="mena" lang="en">
-          <body className={`${font.className} bg-base-200`}>
+      <html lang="en">
+          <body className={`${font.className} dark`}>
               <div><Navbar /></div>
               <div>{children}</div>
               {/* <div><Footer /></div> */}

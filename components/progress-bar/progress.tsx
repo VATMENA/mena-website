@@ -8,7 +8,7 @@ function Progress() {
   return (
       <ProgressBar
           height="2px"
-          color="#f18f01"
+          color="#DD540C"
           options={{ showSpinner: false }}
           shallowRouting
       />
