@@ -1,5 +1,6 @@
+import Header from "@/components/header/header";
 import { buttonVariants } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { links } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -9,16 +10,12 @@ import { RiTwitterXFill } from "react-icons/ri"
 
 export default function Home() {
     return (
-        <div>
-            <div className="bg-[url('/images/home-landing.png')] bg-cover bg-no-repeat">
-                <div className="bg-[rgba(0,0,0,0.70)]">
-                    <div className="h-screen flex flex-col justify-center container mx-auto">
-                        <h1 className="text-5xl">Welcome to VATMENA</h1>
-                        <p>Providing VATSIM services in the Middle East & North Africa, from Morocco to Oman and everything in between.</p>
-                        <Link href={"/"} className={cn(buttonVariants({ variant: "default" }) , "w-fit mt-2")}>Join Us</Link>
-                    </div>
-                </div>
-            </div>
+        <>
+            <Header imageUrl="/images/home-landing.png" fullscreen={true}>
+                <h1 className="text-5xl">Welcome to VATMENA</h1>
+                <p>Providing VATSIM services in the Middle East & North Africa, from Morocco to Oman and everything in between.</p>
+                <Link href={"/"} className={cn(buttonVariants({ variant: "default" }), "w-fit mt-2")}>Join Us</Link>
+            </Header>
             <div className="my-16 flex justify-center items-center gap-8 flex-wrap lg: mx-8 container mx-auto">
                 <Card className="w-3/12">
                     <CardHeader>
@@ -54,6 +51,6 @@ export default function Home() {
                     <Link href={links.discord} target="_blank" className={cn(buttonVariants({ variant: "ghost" }), "bg-discord")}><BsDiscord className="me-1" />Join our Discord</Link>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

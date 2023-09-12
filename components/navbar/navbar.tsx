@@ -53,13 +53,11 @@ function Navbar() {
                     <NavDropDown title="Division">
                         <DropdownMenuContent className="w-56">
                             <DropdownMenuGroup>
-                                <DropdownMenuItem>
-                                    <Users2 className="mr-2 h-4 w-4" />
-                                    <span>Join Us</span>
+                                <DropdownMenuItem asChild>
+                                    <Link href="/division/join"><Users2 className="mr-2 h-4 w-4" />Join Us</Link>
                                 </DropdownMenuItem>
-                                <DropdownMenuItem>
-                                    <Radar className="mr-2 h-4 w-4" />
-                                    <span>Area Control Centres</span>
+                                <DropdownMenuItem asChild>
+                                    <Link href="/division/vaccs"><Radar className="mr-2 h-4 w-4" />Area Control Centers</Link>
                                 </DropdownMenuItem>
                                 <DropdownMenuItem asChild>
                                     <Link href="/division/policies-downloads"><FileDown className="mr-2 h-4 w-4" />Policies & Downloads</Link>
@@ -79,6 +77,12 @@ function Navbar() {
                                 <Link href={links.discord} target="_blank">Discord</Link>
                             </DropdownMenuItem>
                         </DropdownMenuContent>
+                    </NavDropDown>
+                    <NavDropDown title="Pilots">
+
+                    </NavDropDown>
+                    <NavDropDown title="Controllers">
+
                     </NavDropDown>
                 </div>
             </div>

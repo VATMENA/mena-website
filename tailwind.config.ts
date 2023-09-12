@@ -52,7 +52,8 @@ module.exports = {
                 },
                 orange: "#F18F01",
                 twitter: "#1DA1F2",
-                discord: "#5865F2"
+                discord: "#5865F2",
+                "primary-light": "#f57f41",
             },
             borderRadius: {
                 lg: "var(--radius)",
