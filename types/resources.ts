@@ -1,7 +1,8 @@
 export interface Document {
     title: string;
     locationUri: string;
-    lastUpdated: Date
+    lastUpdated: Date;
+    id: string;
 }
 
 export interface SectorFile {
