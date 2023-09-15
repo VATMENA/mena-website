@@ -30,7 +30,7 @@ async function PilotResources() {
 
     return (
         <>
-            <Header>
+            <Header imageUrl="/images/sudan_q400.png">
                 <h1 className="text-5xl">Pilot Resources</h1>
             </Header>
             <div className="container mx-auto">

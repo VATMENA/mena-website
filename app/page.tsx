@@ -12,7 +12,7 @@ import { RiTwitterXFill } from "react-icons/ri"
 export default function Home() {
     return (
         <>
-            <Header imageUrl="/images/home-landing.png" fullscreen={true}>
+            <Header imageUrl="/images/arb_qtr.png" fullscreen={true}>
                 <h1 className="text-5xl">Welcome to VATMENA</h1>
                 <p>Providing VATSIM services in the Middle East & North Africa, from Morocco to Oman and everything in between.</p>
                 <Link href={"/division/join"} className={cn(buttonVariants({ variant: "default" }), "w-fit mt-2")}>Join Us</Link>

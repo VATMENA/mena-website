@@ -25,7 +25,7 @@ async function VACCS() {
 
     return (
         <>
-            <Header>
+            <Header imageUrl="/images/737_777.png">
                 <h1 className="text-5xl">Area Control Centers</h1>
             </Header>
             <div className="container mx-auto">

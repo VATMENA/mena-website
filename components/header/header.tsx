@@ -7,7 +7,7 @@ function Header({ imageUrl, children, fullscreen }: { imageUrl?: string, childre
 
     return (
         <>
-            <div className={cn("bg-cover bg-no-repeat mb-6", fullscreen ? "h-screen" : "h-80")} style={backgroundStyling}>
+            <div className={cn("bg-cover bg-no-repeat bg-center mb-6", fullscreen ? "h-screen" : "h-80")} style={backgroundStyling}>
                 <div className="bg-[rgba(0,0,0,0.70)] h-full">
                     <div className="h-full container mx-auto flex flex-col justify-center">
                         {children}

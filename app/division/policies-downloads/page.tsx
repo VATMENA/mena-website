@@ -61,7 +61,7 @@ async function PoliciesAndDownloads() {
 
     return (
         <>
-            <Header>
+            <Header imageUrl="/images/saudi.png">
                 <h1 className="text-5xl">Policies & Downloads</h1>
             </Header>
             <div className="container mx-auto">

@@ -9,7 +9,7 @@ import { BiLinkExternal } from "react-icons/bi"
 function BecomeAController() {
     return (
         <>
-            <Header>
+            <Header imageUrl="/images/atc-scope.jpg">
                 <h1 className="text-5xl">Become a Controller</h1>
             </Header>
             <div className="container mx-auto">

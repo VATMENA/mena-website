@@ -7,7 +7,7 @@ import { BiLinkExternal } from "react-icons/bi"
 function Join() {
     return (
         <div>
-            <Header fullscreen={true}>
+            <Header fullscreen={true} imageUrl="/images/cockpit.png">
                 <div className="h-full flex justify-center items-center">
                     <div className="text-center">
                         <h1 className="text-5xl">
