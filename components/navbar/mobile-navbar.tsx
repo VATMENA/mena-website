@@ -16,10 +16,9 @@ function MobileNavbar() {
     const path = usePathname();
     const [open, setOpen] = useState(false);
 
-    useEffect(() => {
+    useEffect(() => {        
         let isSubscribed = true;
-
-        if (open && isSubscribed) {
+        if (open) {
             setOpen(false)
         }
 

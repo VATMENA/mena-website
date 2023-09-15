@@ -46,7 +46,7 @@ async function PilotResources() {
                         <Link className="italic font-bold hover:underline text-primary" href={links.discord} target="_blank">Discord server <BiLinkExternal className="inline" /></Link>
                         .</p><br />
                     <p>We look forward to seeing you in the skies!</p><br />
-                    <p className="italic text-zinc-400">Psst! If you'd like to join our division, see <Link className="font-bold hover:underline text-primary" href="/division/join">Join Us</Link>.</p>
+                    <p className="italic text-zinc-400">Psst! If you&apos;d like to join our division, see <Link className="font-bold hover:underline text-primary" href="/division/join">Join Us</Link>.</p>
 
                 </div>
                 <div>

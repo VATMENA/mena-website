@@ -22,7 +22,7 @@ function VisitTransfer() {
                     <h2 className="text-3xl mb-3">Visiting</h2>
                     <p>Looking to stay in your current Division/vACC as a resident but interested in controlling in the Middle East and North Africa?</p>
                     <p>VATMENA host a range of vACCs offering visiting spaces for controllers interested in an adventure.</p>
-                    <p>Every visitor is subject to both VATSIM's and VATMENA's Visiting Controller policy.</p>
+                    <p>Every visitor is subject to both VATSIM&apos;s and VATMENA&apos;s Visiting Controller policy.</p>
                     <div className="flex flex-wrap gap-3 mt-6">
                         <Link href="https://vatsim.net/docs/policy/transfer-and-visiting-controller-policy#2-visiting-controller"
                             target="_blank"
@@ -92,7 +92,7 @@ function VisitTransfer() {
                             </p>
                             <p>
                                 Upon approval of the request, you will receive a welcome introduction in response to your
-                                ticket that contains your chosen vACC's contact information.
+                                ticket that contains your chosen vACC&apos;s contact information.
                             </p>
                         </div>
                         {/* end vacc assignment */}

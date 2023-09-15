@@ -24,7 +24,7 @@ function BecomeAController() {
                         <p>
                             There are multiple ATC ratings within the network, each allowing you to control certain positions.
                             As a new controller, you will start as an Observer (OBS) and start training towards becoming a Delivery/Ground Controller (S1).
-                            Before you start training as an air traffic controller, the first step is to make sure that you're a member of the
+                            Before you start training as an air traffic controller, the first step is to make sure that you&apos;re a member of the
                             VATSIM Middle East & North Africa division. You can follow instructions to do so on our&nbsp;
                             <Link className="italic font-bold hover:underline text-primary" href="/controllers/visit-and-transfer">Visit & Transfer</Link> page.
                         </p>
