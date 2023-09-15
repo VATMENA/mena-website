@@ -17,7 +17,7 @@ export default function Home() {
                 <Link href={"/"} className={cn(buttonVariants({ variant: "default" }), "w-fit mt-2")}>Join Us</Link>
             </Header>
             <div className="my-16 flex justify-center items-center gap-8 flex-wrap lg: mx-8 container mx-auto">
-                <Card className="w-3/12">
+                <Card className="max-w-sm">
                     <CardHeader>
                         <CardTitle className="flex justify-center text-primary text-4xl"><BsFillPeopleFill /></CardTitle>
                     </CardHeader>
@@ -26,7 +26,7 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <Card className="w-3/12">
+                <Card className="max-w-sm">
                     <CardHeader>
                         <CardTitle className="flex justify-center text-primary text-4xl"><FaBookReader /></CardTitle>
                     </CardHeader>
@@ -35,7 +35,7 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <Card className="w-3/12">
+                <Card className="max-w-sm">
                     <CardHeader>
                         <CardTitle className="flex justify-center text-primary text-4xl"><FaPlaneDeparture /></CardTitle>
                     </CardHeader>

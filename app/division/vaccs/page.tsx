@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card"
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
+import { BiLinkExternal } from "react-icons/bi";
 
 async function getVaccs(): Promise<VACC[]> {
     const res = await fetch(`${process.env.URL}/api/division/vaccs`)
@@ -32,12 +33,12 @@ async function VACCS() {
                     {vaccs.map((vacc: VACC, index: number) => (
                         <Card key={index}>
                             <CardHeader className="text-center">
-                                image here
+                                {/* image here */}
                                 <CardTitle>{vacc.name}</CardTitle>
                             </CardHeader>
                             <CardContent className="text-center">
                                 <Link href={`${vacc.websiteUrl}`} target="_blank" className={buttonVariants({ variant: "default" })} >
-                                    Visit { vacc.name }
+                                    Visit {vacc.name} <BiLinkExternal className="inline" />
                                 </Link>
                             </CardContent>
                         </Card>

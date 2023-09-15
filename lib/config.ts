@@ -5,3 +5,5 @@ export const links: StaticLinks = {
     academy: "https://academy.vatsim.me/",
     twitter: "https://twitter.com/vatmena"
 }
+
+export const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

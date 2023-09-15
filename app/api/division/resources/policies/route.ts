@@ -35,12 +35,6 @@ export const GET = () => {
             id: "VATMENA_POL_FSS_R02-2022"
         },
         {
-            title: "Flight Service Station Policy",
-            locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_FSS_R02-2022.pdf",
-            lastUpdated: new Date("2022-11-17"),
-            id: "VATMENA_POL_FSS_R02-2022"
-        },
-        {
             title: "OpenSkies Policy",
             locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_OPSKY_R02-2022.pdf",
             lastUpdated: new Date("2022-05-10"),

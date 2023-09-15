@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { BiLinkExternal } from "react-icons/bi"
+import { months } from "@/lib/config"
 
 async function getPolicies(): Promise<Document[]> {
     const res = await fetch(`${process.env.URL}/api/division/resources/policies`)
@@ -44,7 +45,6 @@ async function PoliciesAndDownloads() {
     const policies = await getPolicies();
     const meetings = await getMeetings();
     const sectorFiles = await getSectorFiles();
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     const formatCoveredFirs = (firCodes: string[]) => {
         let result = "";
@@ -146,7 +146,7 @@ async function PoliciesAndDownloads() {
                     }
                 </div>
                 <Separator className="my-12" />
-                <div>
+                <div id="sector-files">
                     <h2 className="text-3xl mb-3">Sector Files</h2>
                     {sectorFiles.length < 1
                         ?
