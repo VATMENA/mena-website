@@ -14,13 +14,15 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { BiLinkExternal } from "react-icons/bi";
+import { briefings } from "@/constants/pilots/briefings/route";
 
 async function getBriefings(): Promise<Document[]> {
-    const res = await fetch(`${process.env.URL}/api/pilots/briefings`)
-    if (!res.ok) {
-        throw new Error("Could not fetch pilot briefings!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/pilots/briefings`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch pilot briefings!")
+    // }
+    // return res.json();
+    return briefings;
 }
 
 

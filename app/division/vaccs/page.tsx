@@ -10,13 +10,15 @@ import {
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { BiLinkExternal } from "react-icons/bi";
+import { vaccs } from "@/constants/vaccs/route";
 
 async function getVaccs(): Promise<VACC[]> {
-    const res = await fetch(`${process.env.URL}/api/division/vaccs`)
-    if (!res.ok) {
-        throw new Error("Could not fetch vACCs!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/division/vaccs`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch vACCs!")
+    // }
+    // return res.json();
+    return vaccs;
 }
 
 async function VACCS() {

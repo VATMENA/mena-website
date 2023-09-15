@@ -15,29 +15,35 @@ import { buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { BiLinkExternal } from "react-icons/bi"
 import { months } from "@/lib/config"
+import { policies } from "@/constants/division/resources/policies/route"
+import { meetingMinutes } from "@/constants/division/resources/meeting-minutes/route"
+import { sectorFiles } from "@/constants/division/resources/sector-files/route"
 
 async function getPolicies(): Promise<Document[]> {
-    const res = await fetch(`${process.env.URL}/api/division/resources/policies`)
-    if (!res.ok) {
-        throw new Error("Could not fetch policies!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/division/resources/policies`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch policies!")
+    // }
+    // return res.json();
+    return policies;
 }
 
 async function getMeetings(): Promise<Document[]> {
-    const res = await fetch(`${process.env.URL}/api/division/resources/meeting-minutes`)
-    if (!res.ok) {
-        throw new Error("Could not fetch meeting minutes!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/division/resources/meeting-minutes`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch meeting minutes!")
+    // }
+    // return res.json();
+    return meetingMinutes;
 }
 
 async function getSectorFiles(): Promise<SectorFile[]> {
-    const res = await fetch(`${process.env.URL}/api/division/resources/sector-files`)
-    if (!res.ok) {
-        throw new Error("Could not fetch sector files!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/division/resources/sector-files`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch sector files!")
+    // }
+    // return res.json();
+    return sectorFiles;
 }
 
 async function PoliciesAndDownloads() {

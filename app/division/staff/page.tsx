@@ -11,13 +11,15 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Header from "@/components/header/header";
+import { staff } from "@/constants/division/staff/route";
 
 async function getStaff(): Promise<Staff[]> {
-    const res = await fetch(`${process.env.URL}/api/division/staff`)
-    if (!res.ok) {
-        throw new Error("Could not fetch staff!")
-    }
-    return res.json();
+    // const res = await fetch(`${process.env.URL}/api/division/staff`)
+    // if (!res.ok) {
+    //     throw new Error("Could not fetch staff!")
+    // }
+    // return res.json();
+    return staff;
 }
 
 async function DivisionStaff() {
