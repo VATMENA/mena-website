@@ -15,7 +15,7 @@ function BecomeAController() {
             <div className="container mx-auto">
                 <div className="mb-12">
                     <div className="mb-6">
-                        <h2 className="text-3xl mb-3">New Controllers</h2>
+                        <h2 className="text-3xl font-bold">New Controllers</h2>
                         <p>
                             Are you looking to explore a new side of the VATSIM network by becoming an air traffic controller?
                             VATMENA can help with that!
@@ -30,7 +30,7 @@ function BecomeAController() {
                         </p>
                     </div>
                     <div>
-                        <h3 className="text-xl mb-3">Onboarding</h3>
+                        <h3 className="text-xl font-bold">Onboarding</h3>
                         <p>
                             If you are not already a member of a VATMENA vACC, view the&nbsp;
                             <Link className="italic font-bold hover:underline text-primary" href="/division/vaccs">list of our vACCs</Link>&nbsp;
@@ -50,9 +50,9 @@ function BecomeAController() {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-3xl mb-3">Software</h2>
+                    <h2 className="text-3xl font-bold">Software</h2>
                     <div className="mb-6">
-                        <h3 className="text-xl">Communication</h3>
+                        <h3 className="text-xl font-bold">Communication</h3>
                         <p>
                             VATMENA and each of the vACCs operating within the division use Discord for communication. See the&nbsp;
                             <Link href="https://community.vatsim.net/" target="_blank" className="italic font-bold hover:underline text-primary">
@@ -69,7 +69,7 @@ function BecomeAController() {
                         </Link>
                     </div>
                     <div className="mb-6">
-                        <h3 className="text-xl">Controller Client</h3>
+                        <h3 className="text-xl font-bold">Controller Client</h3>
                         <p>vACCs within VATMENA primarily use the Euroscope controller client.</p>
                         <Link
                             href="https://www.euroscope.hu/wp/"
@@ -80,7 +80,7 @@ function BecomeAController() {
                         </Link>
                     </div>
                     <div className="mb-6">
-                        <h3 className="text-xl">Sector Files</h3>
+                        <h3 className="text-xl font-bold">Sector Files</h3>
                         <p>Sector files for the airspace covered by VATMENA can be found&nbsp;
                             <Link href="/division/policies-downloads#sector-files" className="italic font-bold hover:underline text-primary">here</Link>.
                         </p>

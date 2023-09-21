@@ -36,7 +36,7 @@ async function DivisionStaff() {
                 return (
                     <div className="container mx-auto" key={index}>
                         <div className="grid grid-cols-4 gap-16">
-                            <div><h2 className="text-3xl">{department}</h2></div>
+                            <div><h2 className="text-3xl font-bold">{department}</h2></div>
                             <div className="col-span-4 lg:col-span-3 flex flex-wrap gap-8 justify-center">
                                 {
                                     staff.filter((entry: Staff) => entry.department === department).map((staffMember: Staff, index: number) => {
