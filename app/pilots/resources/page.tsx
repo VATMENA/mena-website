@@ -37,7 +37,7 @@ async function PilotResources() {
             </Header>
             <div className="container mx-auto">
                 <div className="w-full mb-12">
-                    <h2 className="text-3xl mb-3">New to VATSIM?</h2>
+                    <h2 className="text-3xl font-bold">New to VATSIM?</h2>
                     <p>Firstly, welcome to the network!</p><br />
                     <p>VATSIM have created a range of helpful documentation that you can use to get started. The best place to start your journey is the&nbsp;
                         <Link className="italic font-bold hover:underline text-primary" href="https://vatsim.net" target="_blank">VATSIM website <BiLinkExternal className="inline" /></Link>.
@@ -52,9 +52,9 @@ async function PilotResources() {
 
                 </div>
                 <div>
-                    <h2 className="text-3xl mb-3">Airport Briefings</h2>
+                    <h2 className="text-3xl font-bold">Airport Briefings</h2>
                     {briefings.length < 1 ?
-                        <em>No briefings were found.</em>
+                        <div className="mt-3"><em>No briefings were found.</em></div>
                         :
                         <Table>
                             <TableHeader>

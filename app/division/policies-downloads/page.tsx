@@ -72,9 +72,9 @@ async function PoliciesAndDownloads() {
             </Header>
             <div className="container mx-auto">
                 <div>
-                    <h2 className="text-3xl mb-3">Policies</h2>
+                    <h2 className="text-3xl font-bold">Policies</h2>
                     {policies.length < 1 ?
-                        <em>No policies were found.</em>
+                        <div className="mt-3"><em>No policies were found.</em></div>
                         :
                         <Table>
                             <TableHeader>
@@ -112,10 +112,10 @@ async function PoliciesAndDownloads() {
                 </div>
                 <Separator className="my-12" />
                 <div>
-                    <h2 className="text-3xl mb-3">Meeting Minutes</h2>
+                    <h2 className="text-3xl font-bold">Meeting Minutes</h2>
                     {meetings.length < 1
                         ?
-                        <em>No meeting minutes were found.</em>
+                        <div className="mt-3"><em>No meeting minutes were found.</em></div>
                         :
                         <Table>
                             <TableHeader>
@@ -153,10 +153,10 @@ async function PoliciesAndDownloads() {
                 </div>
                 <Separator className="my-12" />
                 <div id="sector-files">
-                    <h2 className="text-3xl mb-3">Sector Files</h2>
+                    <h2 className="text-3xl font-bold">Sector Files</h2>
                     {sectorFiles.length < 1
                         ?
-                        <em>No sector files were found.</em>
+                        <div className="mt-3"><em>No sector files were found.</em></div>
                         :
                         <Table>
                             <TableHeader>

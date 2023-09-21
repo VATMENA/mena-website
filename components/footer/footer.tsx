@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from "next/link"
 import { Separator } from "../ui/separator"
+import { BiLinkExternal } from "react-icons/bi"
+import { links } from "@/lib/config"
 
 function Footer() {
     return (
@@ -19,23 +21,26 @@ function Footer() {
                     </div>
                     <nav className="col-span-1 flex flex-col">
                         <header className="pb-6 uppercase">Division</header>
-                        <Link href="" className="hover:underline">Join Us</Link>
-                        <Link href="" className="hover:underline">Area Control Centers</Link>
-                        <Link href="" className="hover:underline">Policies & Downloads</Link>
-                        <Link href="" className="hover:underline">Academy</Link>
-                        <Link href="" className="hover:underline">Discord</Link>
+                        <Link href="/division/join" className="hover:underline">Join Us</Link>
+                        <Link href="/division/vaccs" className="hover:underline">Area Control Centers</Link>
+                        <Link href="/division/policies-downloads" className="hover:underline">Policies & Downloads</Link>
+                        <Link href="/division/staff" className="hover:underline">Staff</Link>
+                        <Link href={links.academy} target="_blank" className="hover:underline">Academy <BiLinkExternal className="inline" /></Link>
+                        <Link href={links.discord} target="_blank" className="hover:underline">Discord <BiLinkExternal className="inline" /></Link>
                     </nav>
                     <nav className="col-span-1 flex flex-col">
                         <header className="pb-6 uppercase">Pilots</header>
-                        <Link href="" className="hover:underline">Getting Started</Link>
-                        <Link href="" className="hover:underline">Resources</Link>
+                        <Link href="/pilots/resources" className="hover:underline">Resources</Link>
+                        <Link href="https://my.vatsim.net/pilots/train" target="_blank" className="hover:underline">Pilot Training <BiLinkExternal className="inline" /></Link>
+                        <Link href="https://my.vatsim.net/virtual-airlines" target="_blank" className="hover:underline">Virtual Airlines <BiLinkExternal className="inline" /></Link>
+                        <Link href="https://my.vatsim.net" target="_blank" className="hover:underline">myVATSIM <BiLinkExternal className="inline" /></Link>
                     </nav>
                     <nav className="col-span-1 flex flex-col">
                         <header className="pb-6 uppercase">Controllers</header>
-                        <Link href="" className="hover:underline">Become Link Controller</Link>
-                        <Link href="" className="hover:underline">Visit & Transfer</Link>
-                        <Link href="" className="hover:underline">Active Validations</Link>
-                        <Link href="" className="hover:underline">Examiners & Instructors</Link>
+                        <Link href="/controllers/become-a-controller" className="hover:underline">Become a Controller</Link>
+                        <Link href="/controllers/visit-and-transfer" className="hover:underline">Visit & Transfer</Link>
+                        <Link href="https://staff.vatsim.me/instructors" target="_blank" className="hover:underline">Training Staff <BiLinkExternal className="inline" /></Link>
+                        <Link href="https://staff.vatsim.me/solos" target="_blank" className="hover:underline">Active Validations <BiLinkExternal className="inline" /></Link>
                     </nav>
                 </div>
             </footer>
