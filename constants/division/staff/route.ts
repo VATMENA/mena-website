@@ -93,15 +93,15 @@ export const staff: Staff[] = ([
         department: "VATMENA Technical Department"
     },
     {
+        name: "Krishna Ajay",
+        email: "techteam@vatsim.me",
+        title: "Developer, MENATECH",
+        department: "VATMENA Technical Department"
+    },
+    {
         name: "Karim Nour",
         email: "karim.nour@vatsim.me",
         title: "Sysadmin, MENATECH",
         department: "VATMENA Technical Department"
     },
-    {
-        name: "Krishna Ajay",
-        email: "techteam@vatsim.me",
-        title: "MENATECH",
-        department: "VATMENA Technical Department"
-    }
 ])
