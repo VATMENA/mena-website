@@ -38,11 +38,16 @@ export const staff: Staff[] = ([
         department: "VATMENA ATC Department"
     },
     {
-        name: "Vacant",
-        email: "jobs@vatsim.me",
+        name: "Chriss Klosowski",
+        email: "chriss.klosowski@vatsim.me",
+        title: "Deputy Operations Director, VATMENA33",
+        department: "VATMENA ATC Department"
+    },
+    {
+        name: "Ismail Hassan",
+        email: "ismail.hassan@vatsim.me",
         title: "Marketing Department Director, VATMENA4",
         department: "VATMENA Marketing Department",
-        vacant: true
     },
     {
         name: "Vacant",
@@ -85,6 +90,18 @@ export const staff: Staff[] = ([
         name: "Kirollos Nashaat",
         email: "kirollos.nashaat@vatsim.me",
         title: "Developer, MENATECH3",
+        department: "VATMENA Technical Department"
+    },
+    {
+        name: "Karim Nour",
+        email: "karim.nour@vatsim.me",
+        title: "Sysadmin, MENATECH",
+        department: "VATMENA Technical Department"
+    },
+    {
+        name: "Krishna Ajay",
+        email: "techteam@vatsim.me",
+        title: "MENATECH",
         department: "VATMENA Technical Department"
     }
 ])
