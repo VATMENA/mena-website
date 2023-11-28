@@ -20,7 +20,7 @@ export function NavDropDown({ title, children, mobile }: { title: string, childr
     return (
         <DropdownMenu onOpenChange={(isOpen) => setHasDropped(isOpen)}>
             <DropdownMenuTrigger asChild>
-                <Button className={ cn(mobile ? "w-full justify-start" : "w-fit") } variant="ghost">
+                <Button className={cn(mobile ? "w-full justify-start" : "w-fit", "focus:border-transparent focus:ring-0") } variant="ghost">
                     <span className="pe-1">{ title }</span>
                     <ChevronDown size={16} className={cn("transition-all duration-150 ease-linear", hasDropped ? "rotate-180" : "rotate-0")} />
                 </Button>
