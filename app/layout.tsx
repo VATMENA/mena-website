@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Footer from "@/components/footer/footer"
 import Progress from "@/components/progress-bar/progress"
+import { cn } from "@/lib/utils"
 
 const font = Poppins({ weight: "400", subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en">
-          <body className={`${font.className} dark`}>
+          <body className={cn(font.className, "mena")}>
               <div><Navbar /></div>
               <div>{children}</div>
               <div><Footer /></div>
