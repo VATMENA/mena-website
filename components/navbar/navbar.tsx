@@ -30,7 +30,7 @@ function Navbar() {
     }
 
     return (
-        <div className={cn("transition ease-in-out duration-300 fixed w-full py-6", hasScrolled ? "bg-background" : "bg-transparent")}>
+        <div className={cn("transition ease-in-out duration-300 fixed w-full py-6", hasScrolled ? "bg-background shadow-2xl" : "bg-transparent")}>
             <div className="container mx-auto">
                 <div className="float-left">
                     <Image src="/logo.png" height={38} width={141} alt="Logo" />
