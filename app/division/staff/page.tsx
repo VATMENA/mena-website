@@ -5,6 +5,7 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
@@ -27,6 +28,15 @@ async function DivisionStaff() {
     const staff = await getStaff();
     const departments = new Set(staff.map((staffMember: Staff) => staffMember.department))
 
+    const footer = (staff: Staff) => {
+        if (!staff.footerText) return null;
+        return (
+            <CardFooter className="text-center text-foreground/50">
+                <em>{staff.footerText}</em>
+            </CardFooter>
+        )
+    }
+
     return (
         <>
             <Header imageUrl="/images/home-landing.png">
@@ -41,7 +51,7 @@ async function DivisionStaff() {
                                 {
                                     staff.filter((entry: Staff) => entry.department === department).map((staffMember: Staff, index: number) => {
                                         return (
-                                            <Card key={ index }>
+                                            <Card key={ index } className="w-80">
                                                 <CardHeader className="text-center">
                                                     <CardTitle>{staffMember.name}</CardTitle>
                                                     <CardDescription>{staffMember.title}</CardDescription>
@@ -51,6 +61,7 @@ async function DivisionStaff() {
                                                         {staffMember.vacant ? "Apply Here" : `Email ${staffMember.name.split(" ")[0]}`}
                                                     </Link>
                                                 </CardContent>
+                                                { footer(staffMember) }
                                             </Card>
                                         )
                                     })

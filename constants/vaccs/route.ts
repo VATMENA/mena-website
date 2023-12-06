@@ -34,6 +34,6 @@ export const vaccs: VACC[] = [
     {
         name: "Saudi Arabia vACC",
         logoUri: "",
-        websiteUrl: "https://vatsimsa.net/"
+        websiteUrl: "https://vatsimsa.net/en"
     }
 ]
