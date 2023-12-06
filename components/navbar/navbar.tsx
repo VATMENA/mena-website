@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { cn } from "@/lib/utils";
 import MobileNavbar from "./mobile-navbar";
 import NavbarItems from "./navbar-items";
+import Link from "next/link";
 
 
 function Navbar() {
@@ -33,7 +34,7 @@ function Navbar() {
         <div className={cn("transition ease-in-out duration-300 fixed w-full py-6", hasScrolled ? "bg-background shadow-2xl" : "bg-transparent")}>
             <div className="container mx-auto">
                 <div className="float-left">
-                    <Image src="/logo.png" height={38} width={141} alt="Logo" />
+                    <Link href="/"><Image src="/logo.png" height={38} width={141} alt="Logo" /></Link>
                 </div>
                 <div className="float-right">
                     <div className="md:hidden">

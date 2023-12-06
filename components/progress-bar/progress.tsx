@@ -7,8 +7,8 @@ import React from 'react'
 function Progress() {
   return (
       <ProgressBar
-          height="2px"
-          color="#33658A"
+          height="3px"
+          color="#7F1406"
           options={{ showSpinner: false }}
           shallowRouting
       />

@@ -21,7 +21,7 @@ function VisitTransfer() {
                             target="_blank"
                             className={buttonVariants({ variant: "default" })}
                         >
-                            <div>VATMENA Membership Policy <BiLinkExternal className="inline" /></div>
+                            <div>VATSIM Visiting and Transfer Policy <BiLinkExternal className="inline" /></div>
                         </Link>
                         <Link href="https://cdn.vatsim.me/policies/VATMENA_POL_MP_R01-2022.pdf"
                             target="_blank"

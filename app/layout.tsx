@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en">
-          <body className={cn(font.className, "dark")}>
+          <body className={cn(font.className)}>
               <div><Navbar /></div>
               <div>{children}</div>
               <div><Footer /></div>
