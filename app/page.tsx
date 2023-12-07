@@ -15,7 +15,7 @@ export default function Home() {
             <Header imageUrl="/images/arb_qtr.png" fullscreen={true}>
                 <h1 className="text-5xl">Welcome to VATMENA</h1>
                 <p>Providing VATSIM services in the Middle East & North Africa, from Morocco to Oman and everything in between.</p>
-                <Link href={"/division/join"} className={cn(buttonVariants({ variant: "default" }), "w-fit mt-2")}>Join Us</Link>
+                <Link href={"/division/join"} className={cn(buttonVariants({ variant: "default" }), "w-fit min-w-[10%] mt-2")}>Join Us</Link>
             </Header>
             <div className="my-16 flex justify-center items-center gap-8 flex-wrap lg: mx-8 container mx-auto">
                 <Card className="max-w-sm">

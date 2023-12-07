@@ -1,5 +1,4 @@
 import Header from "@/components/header/header"
-import Underline from "@/components/underline/underline"
 import { links } from "@/lib/config"
 import Link from "next/link"
 import React from 'react'
@@ -14,7 +13,7 @@ function Join() {
                         <h1 className="text-5xl">
                             Ready to join?
                         </h1>
-                        <p className="italic text-zinc-500 mt-3">See below for information.</p>
+                        <p className="italic text-foreground/50 mt-3">See below for information.</p>
                     </div>
                 </div>
             </Header>

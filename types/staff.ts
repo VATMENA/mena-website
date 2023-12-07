@@ -3,5 +3,6 @@ export interface Staff {
     email: string;
     title: string;
     department: string;
-    vacant?: boolean
+    vacant?: boolean;
+    footerText?: string
 }

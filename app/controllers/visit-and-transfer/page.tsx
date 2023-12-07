@@ -3,13 +3,6 @@ import { buttonVariants } from "@/components/ui/button"
 import Link from "next/link"
 import React from 'react'
 import { BiLinkExternal } from "react-icons/bi"
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-
 
 function VisitTransfer() {
     return (
@@ -28,7 +21,7 @@ function VisitTransfer() {
                             target="_blank"
                             className={buttonVariants({ variant: "default" })}
                         >
-                            <div>VATMENA Membership Policy <BiLinkExternal className="inline" /></div>
+                            <div>VATSIM Visiting and Transfer Policy <BiLinkExternal className="inline" /></div>
                         </Link>
                         <Link href="https://cdn.vatsim.me/policies/VATMENA_POL_MP_R01-2022.pdf"
                             target="_blank"
@@ -37,7 +30,7 @@ function VisitTransfer() {
                             <div>VATMENA Membership Policy <BiLinkExternal className="inline" /></div>
                         </Link>
                     </div>
-                    <p className="text-neutral-600 mt-1"><em>See section 9 of the VATMENA Membership Policy for details about visiting.</em></p>
+                    <p className="text-foreground/50 mt-1"><em>See section 9 of the VATMENA Membership Policy for details about visiting.</em></p>
                 </div>
                 <div>
                     <h2 className="text-3xl font-bold">Transferring</h2>
