@@ -17,7 +17,7 @@ function Footer() {
                     <div className="col-span-1">
                         <Image src="/logo.png" height={38} width={141} alt="Logo" className="pb-3" />
                         <p className="pb-3">&copy; VATMENA 2023<br />Content on this website is for<br />flight simulation purposes only.</p>
-                        <Link href="/" className="hover:underline">Privacy Policy</Link>
+                        <Link href="https://cdn.vatsim.me/policies/VATMENA_POL_DPP_R01-2023.pdf" target="_blank" className="hover:underline">Privacy Policy</Link>
                     </div>
                     <nav className="col-span-1 flex flex-col">
                         <header className="pb-6 uppercase">Division</header>
