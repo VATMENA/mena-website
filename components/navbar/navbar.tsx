@@ -35,7 +35,7 @@ function Navbar() {
         hasScrolled ? "bg-background shadow-2xl" : "bg-transparent",
       )}
     >
-      <div className="flex container justify-between items-center">
+      <div className="flex container justify-between items-center gap-x-2">
         <Link href="/">
           <Image
             src="/logo.png"
