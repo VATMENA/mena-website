@@ -30,7 +30,7 @@ export default function RootLayout({
         <div>
           <Footer />
         </div>
-        <CountdownTimer />
+        // <CountdownTimer />
         <Analytics />
       </body>
     </html>
