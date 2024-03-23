@@ -31,8 +31,8 @@ async function DivisionStaff() {
     const footer = (staff: Staff) => {
         if (!staff.footerText) return null;
         return (
-            <CardFooter className="text-center text-foreground/50">
-                <em>{staff.footerText}</em>
+            <CardFooter className="flex justify-center text-center italic text-foreground/50">
+                {staff.footerText}
             </CardFooter>
         )
     }

@@ -2,10 +2,11 @@ import { Staff } from "@/types/staff";
 
 export const staff: Staff[] = ([
     {
-        name: "John K",
-        email: "john.k@vatsim.me",
+        name: "Chris Marriott",
+        email: "chris.marriott@vatsim.me",
         title: "Director, VATMENA1",
-        department: "Board"
+        department: "Board",
+        footerText: "Acting Director."
     },
     {
         name: "Chris Marriott",
