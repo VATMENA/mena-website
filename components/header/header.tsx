@@ -46,7 +46,7 @@ function Header({
       <div
         className={cn(
           "bg-cover bg-no-repeat bg-center mb-6",
-          fullscreen ? "h-full" : "h-80",
+          fullscreen ? "h-[100svh]" : "h-80",
           className,
         )}
         style={backgroundStyling}
