@@ -1,79 +1,93 @@
-import Link from "next/link"
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 import { Staff } from "@/types/staff";
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { buttonVariants } from "@/components/ui/button";
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Header from "@/components/header/header";
 import { staff } from "@/constants/division/staff/route";
 
 async function getStaff(): Promise<Staff[]> {
-    // const res = await fetch(`${process.env.URL}/api/division/staff`)
-    // if (!res.ok) {
-    //     throw new Error("Could not fetch staff!")
-    // }
-    // return res.json();
-    return staff;
+  // const res = await fetch(`${process.env.URL}/api/division/staff`)
+  // if (!res.ok) {
+  //     throw new Error("Could not fetch staff!")
+  // }
+  // return res.json();
+  return staff;
 }
 
 async function DivisionStaff() {
+  const staff = await getStaff();
+  const departments = new Set(
+    staff.map((staffMember: Staff) => staffMember.department),
+  );
 
-    const staff = await getStaff();
-    const departments = new Set(staff.map((staffMember: Staff) => staffMember.department))
-
-    const footer = (staff: Staff) => {
-        if (!staff.footerText) return null;
-        return (
-            <CardFooter className="text-center text-foreground/50">
-                <em>{staff.footerText}</em>
-            </CardFooter>
-        )
-    }
-
+  const footer = (staff: Staff) => {
+    if (!staff.footerText) return null;
     return (
-        <>
-            <Header imageUrl="/images/home-landing.png">
-                <h1 className="text-5xl">Division Staff</h1>
-            </Header>
-            {Array.from(departments).map((department: string, index: number) => {
-                return (
-                    <div className="container mx-auto" key={index}>
-                        <div className="grid grid-cols-4 gap-16">
-                            <div><h2 className="text-3xl font-bold">{department}</h2></div>
-                            <div className="col-span-4 lg:col-span-3 flex flex-wrap gap-8 justify-center">
-                                {
-                                    staff.filter((entry: Staff) => entry.department === department).map((staffMember: Staff, index: number) => {
-                                        return (
-                                            <Card key={ index } className="w-80">
-                                                <CardHeader className="text-center">
-                                                    <CardTitle>{staffMember.name}</CardTitle>
-                                                    <CardDescription>{staffMember.title}</CardDescription>
-                                                </CardHeader>
-                                                <CardContent className="text-center">
-                                                    <Link href={`mailto:${staffMember.email}`} target="_blank" className={buttonVariants({ variant: "default" })} >
-                                                        {staffMember.vacant ? "Apply Here" : `Email ${staffMember.name.split(" ")[0]}`}
-                                                    </Link>
-                                                </CardContent>
-                                                { footer(staffMember) }
-                                            </Card>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                        {index !== (Array.from(departments).length - 1) && <Separator className="my-6" />}
-                    </div>
-                )
-            })}
-        </>
-    )
+      <CardFooter className="text-center text-foreground/50">
+        <em>{staff.footerText}</em>
+      </CardFooter>
+    );
+  };
+
+  return (
+    <>
+      <Header imageUrl="/images/home-landing.png">
+        <h1 className="text-5xl">Division Staff</h1>
+      </Header>
+      {Array.from(departments).map((department: string, index: number) => {
+        return (
+          <div className="container mx-auto" key={index}>
+            <div className="grid grid-cols-4 gap-16">
+              <div>
+                <h2 className="text-3xl font-bold">{department}</h2>
+              </div>
+              <div className="col-span-4 lg:col-span-3 flex flex-wrap gap-8 justify-center">
+                {staff
+                  .filter((entry: Staff) => entry.department === department)
+                  .map((staffMember: Staff, index: number) => {
+                    return (
+                      <Card key={index} className="w-80">
+                        <CardHeader className="text-center">
+                          <CardTitle>{staffMember.name}</CardTitle>
+                          <CardDescription>{staffMember.title}</CardDescription>
+                        </CardHeader>
+                        <CardContent className="text-center">
+                          <Button disabled={staffMember.reserved}>
+                            <Link
+                              href={`mailto:${staffMember.email}`}
+                              target="_blank"
+                            >
+                              {staffMember.reserved
+                                ? "Reserved"
+                                : staffMember.vacant
+                                  ? "Apply Here"
+                                  : `Email ${staffMember.name.split(" ")[0]}`}
+                            </Link>
+                          </Button>
+                        </CardContent>
+                        {footer(staffMember)}
+                      </Card>
+                    );
+                  })}
+              </div>
+            </div>
+            {index !== Array.from(departments).length - 1 && (
+              <Separator className="my-6" />
+            )}
+          </div>
+        );
+      })}
+    </>
+  );
 }
 
-export default DivisionStaff
+export default DivisionStaff;
