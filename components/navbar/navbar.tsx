@@ -43,7 +43,7 @@ function Navbar() {
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-16"
+            className="w-full h-20"
           />
         </Link>
         <div className="md:hidden">
