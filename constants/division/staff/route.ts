@@ -8,7 +8,7 @@ export const staff: Staff[] = [
     department: "Board",
   },
   {
-    name: "Chris Klosowski",
+    name: "Chriss Klosowski",
     email: "chriss.klosowski@vatsim.me",
     title: "Deputy Director, VATMENA2",
     department: "Board",
@@ -106,12 +106,6 @@ export const staff: Staff[] = [
     email: "techteam@vatsim.me?subject=FAO:%20Keelan%20D",
     title: "Developer, MENATECH",
     department: "Technical Department",
-  },
-  {
-    name: "Chriss Klosowski",
-    email: "chriss.klosowski@vatsim.me",
-    title: "Director of Strategy & Partnerships, VATMENA7",
-    department: "Strategy & Partnerships",
   },
   {
     name: "Nadeem Zabaneh",
