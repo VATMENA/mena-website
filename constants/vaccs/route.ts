@@ -7,6 +7,16 @@ export const vaccs: VACC[] = [
         websiteUrl: "https://arabian-vacc.com/"
     },
     {
+        name: "Saudi Arabia vACC",
+        logoUri: "",
+        websiteUrl: "https://vatsimsa.com"
+    },
+    {
+        name: "Khaleej vACC",
+        logoUri: "",
+        websiteUrl: "https://khaleejvacc.net"
+    },
+    {
         name: "Egyptian vACC",
         logoUri: "",
         websiteUrl: "https://vateg.net/"
@@ -31,9 +41,4 @@ export const vaccs: VACC[] = [
         logoUri: "",
         websiteUrl: "https://www.vatsim-nea.com/en/"
     },
-    {
-        name: "Saudi Arabia vACC",
-        logoUri: "",
-        websiteUrl: "https://vatsimsa.net/en"
-    }
 ]
