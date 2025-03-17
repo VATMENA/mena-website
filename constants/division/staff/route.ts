@@ -54,7 +54,7 @@ export const staff: Staff[] = [
     department: "Membership Department",
   },
   {
-    name: "Abdulrahman Alamoodi",
+    name: "Abdulrahman Alamoodi (LOA)",
     email: "membership@vatsim.me?subject=FAO:%20Abdulrahman%20Alamoodi",
     title: "Membership Department Deputy Director, VATMENA51",
     department: "Membership Department",
@@ -78,8 +78,8 @@ export const staff: Staff[] = [
     department: "Technical Department",
   },
   {
-    name: "Karim Nour",
-    email: "karim.nour@vatsim.me",
+    name: "Kim Nour",
+    email: "kim.nour@vatsim.me",
     title: "Infrastructure Admin, MENATECH",
     department: "Technical Department",
   },
