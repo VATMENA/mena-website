@@ -8,13 +8,6 @@ export const staff: Staff[] = [
     department: "Board",
   },
   {
-    name: "Vacant",
-    email: "jobs@vatsim.me",
-    title: "Deputy Director, VATMENA2",
-    department: "Board",
-    vacant: true,
-  },
-  {
     name: "Nadeem Zabaneh",
     email: "nadeem.zabaneh@vatsim.me",
     title: "ATC Department Director, VATMENA3",
@@ -116,12 +109,5 @@ export const staff: Staff[] = [
     email: "techteam@vatsim.me?subject=FAO:%20Keelan%20D",
     title: "Developer, MENATECH",
     department: "Technical Department",
-  },
-  {
-    name: "Nadeem Zabaneh",
-    email: "dpo@vatsim.me",
-    title: "Data Protection Officer",
-    department: "Miscellaneous",
-    footerText: "The above email is for data protection enquiries only.",
   },
 ];
