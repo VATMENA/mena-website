@@ -2,16 +2,17 @@ import { Staff } from "@/types/staff";
 
 export const staff: Staff[] = [
   {
-    name: "Chris Marriott",
-    email: "chris.marriott@vatsim.me",
+    name: "Rashid Raikhy",
+    email: "rashid.raikhy@vatsim.me",
     title: "Director, VATMENA1",
     department: "Board",
   },
   {
-    name: "Chriss Klosowski",
-    email: "chriss.klosowski@vatsim.me",
+    name: "Vacant",
+    email: "jobs@vatsim.me",
     title: "Deputy Director, VATMENA2",
     department: "Board",
+    vacant: true,
   },
   {
     name: "Nadeem Zabaneh",
@@ -22,15 +23,23 @@ export const staff: Staff[] = [
       "Please do not use the above email for data protection queries.",
   },
   {
-    name: "Rashid Raikhy",
-    email: "rashid.raikhy@vatsim.me",
+    name: "Vacant",
+    email: "jobs@vatsim.me?subject=Application%20for%20ATC%20Department%20Deputy%20Director,%20VATMENA31",
     title: "ATC Department Deputy Director, VATMENA31",
     department: "ATC Department",
+    vacant: true,
   },
   {
-    name: "Mubarak Ahmed",
-    email: "mubarak.ahmed@vatsim.me",
+    name: "Vacant",
+    email: "jobs@vatsim.me",
     title: "Operations Director, VATMENA32",
+    department: "ATC Department",
+    vacant: true,
+  },
+  {
+    name: "Ismail Hassan",
+    email: "ismail.hassan@vatsim.me",
+    title: "Operations Department, MENAOPS",
     department: "ATC Department",
   },
   {
@@ -60,10 +69,11 @@ export const staff: Staff[] = [
     department: "Membership Department",
   },
   {
-    name: "Samuel Hepworth",
-    email: "samuel.hepworth@vatsim.me",
+    name: "Vacant",
+    email: "jobs@vatsim.me",
     title: "Technical Department Director, VATMENA6",
     department: "Technical Department",
+    vacant: true,
   },
   {
     name: "Andrew Ogden",
