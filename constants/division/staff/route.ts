@@ -62,22 +62,15 @@ export const staff: Staff[] = [
     department: "Membership Department",
   },
   {
-    name: "Vacant",
-    email: "jobs@vatsim.me",
+    name: "Kirollos Nashaat",
+    email: "kirollos.nashaat@vatsim.me",
     title: "Technical Department Director, VATMENA6",
     department: "Technical Department",
-    vacant: true,
   },
   {
     name: "Andrew Ogden",
     email: "andrew.ogden@vatsim.me",
     title: "Senior Infrastructure Admin, MENATECH1",
-    department: "Technical Department",
-  },
-  {
-    name: "Kirollos Nashaat",
-    email: "kirollos.nashaat@vatsim.me",
-    title: "Developer, MENATECH3",
     department: "Technical Department",
   },
   {

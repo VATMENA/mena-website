@@ -15,9 +15,9 @@ export const policies: Document[] = [
   },
   {
     title: "ATC Training Policy",
-    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_TRP_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_TRP_R01-2024",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_TRP_R01-2025.pdf",
+    lastUpdated: new Date("2025-08-25"),
+    id: "VATMENA_POL_TRP_R01-2025",
   },
   {
     title: "ATC Examination Policy",
@@ -30,6 +30,12 @@ export const policies: Document[] = [
     locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_FSS_R01-2024.pdf",
     lastUpdated: new Date("2024-03-01"),
     id: "VATMENA_POL_FSS_R01-2024",
+  },
+  {
+    title: "C3 - Senior Controller Policy",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_C3_R01-2025.pdf",
+    lastUpdated: new Date("2025-09-01"),
+    id: "VATMENA_POL_C3_R01-2025",
   },
   {
     title: "OpenSkies Policy",
