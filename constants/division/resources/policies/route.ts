@@ -21,9 +21,9 @@ export const policies: Document[] = [
   },
   {
     title: "ATC Examination Policy",
-    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_CPE_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_CPE_R01-2024",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_CPE_R01-2025.pdf",
+    lastUpdated: new Date("2025-09-04"),
+    id: "VATMENA_POL_CPE_R01-2025",
   },
   {
     title: "Flight Service Station Policy",
@@ -38,10 +38,22 @@ export const policies: Document[] = [
     id: "VATMENA_POL_C3_R01-2025",
   },
   {
+    title: "Fast Track Policy",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_FTP_R01-2025.pdf",
+    lastUpdated: new Date("2025-09-04"),
+    id: "VATMENA_POL_FTP_R01-2025",
+  },
+  {
     title: "OpenSkies Policy",
     locationUri:
       "https://cdn.vatsim.me/policies/VATMENA_POL_OPSKY_R01-2024.pdf",
     lastUpdated: new Date("2024-03-01"),
     id: "VATMENA_POL_OPSKY_R01-2024",
+  },
+  {
+    title: "Branding Guideline Policy",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_BGP_R01-2024.pdf",
+    lastUpdated: new Date("2024-03-01"),
+    id: "VATMENA_POL_BGP_R01-2024",
   },
 ];
