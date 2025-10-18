@@ -56,8 +56,8 @@ export const staff: Staff[] = [
     department: "Membership Department",
   },
   {
-    name: "Abdulrahman Alamoodi (LOA)",
-    email: "membership@vatsim.me?subject=FAO:%20Abdulrahman%20Alamoodi",
+    name: "Philipp Gottschalk",
+    email: "philipp.gottschalk@vatsim.me",
     title: "Membership Department Deputy Director, VATMENA51",
     department: "Membership Department",
   },
