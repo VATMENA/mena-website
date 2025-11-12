@@ -19,7 +19,7 @@ export const vaccs: VACC[] = [
     {
         name: "Levant vACC",
         logoUri: "",
-        websiteUrl: "https://community.vatsim.net"
+        websiteUrl: "https://levantvacc.net/"
     },
     {
         name: "Egyptian vACC",

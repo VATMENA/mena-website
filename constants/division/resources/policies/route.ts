@@ -27,9 +27,9 @@ export const policies: Document[] = [
   },
   {
     title: "Flight Service Station Policy",
-    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_FSS_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_FSS_R01-2024",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_FSS_R01-2025.pdf",
+    lastUpdated: new Date("2024-11-10"),
+    id: "VATMENA_POL_FSS_R01-2025",
   },
   {
     title: "C3 - Senior Controller Policy",
