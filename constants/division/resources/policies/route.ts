@@ -9,9 +9,9 @@ export const policies: Document[] = [
   },
   {
     title: "Membership Policy",
-    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_MP_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_MP_R01-2024",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_MP_01-2025.pdf",
+    lastUpdated: new Date("2025-12-15"),
+    id: "VATMENA_POL_MP_R01-2025",
   },
   {
     title: "ATC Training Policy",
