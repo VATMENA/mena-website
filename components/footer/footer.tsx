@@ -26,7 +26,7 @@ function Footer() {
               className="pb-3"
             />
             <p className="pb-3">
-              &copy; VATMENA 2024
+              &copy; VATMENA 2025
               <br />
               Content on this website is for
               <br />
