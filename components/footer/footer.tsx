@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Separator } from "../ui/separator";
 import { BiLinkExternal } from "react-icons/bi";
 import { links } from "@/lib/config";
+import { MdOutlineEmail } from "react-icons/md";
 
 function Footer() {
   return (
@@ -76,6 +77,9 @@ function Footer() {
             <header className="pb-6 uppercase">Pilots</header>
             <Link href="/pilots/resources" className="hover:underline">
               Resources
+            </Link>
+            <Link href="mailto:atc@vatsim.me" className="hover:underline">
+              ATC feedback <MdOutlineEmail className="inline" />
             </Link>
             <Link
               href="https://my.vatsim.net/pilots/train"

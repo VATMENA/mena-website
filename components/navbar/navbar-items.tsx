@@ -6,6 +6,7 @@ import { FileDown, GraduationCap, Radar, Users2, School, BookCopy, Plane, UserCh
 import { BsDiscord } from "react-icons/bs";
 import { PiIdentificationBadge } from "react-icons/pi";
 import { links } from "@/lib/config";
+import { MdOutlineEmail } from "react-icons/md";
 
 import {
     DropdownMenuContent,
@@ -54,6 +55,9 @@ function NavbarItems({ mobile }: { mobile?: boolean }) {
                     <DropdownMenuGroup>
                         <DropdownMenuItem asChild>
                             <Link href="/pilots/resources"><BookCopy className="mr-2 h-4 w-4" />Resources</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link href="mailto:atc@vatsim.me"><MdOutlineEmail className="mr-2 h-4 w-4" />ATC Feedback</Link>
                         </DropdownMenuItem>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
