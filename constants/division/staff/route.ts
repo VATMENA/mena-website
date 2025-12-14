@@ -103,4 +103,12 @@ export const staff: Staff[] = [
     title: "Developer, MENATECH",
     department: "Technical Department",
   },
+  {
+    name: "Vacant",
+    email:
+      "jobs@vatsim.me?subject=Application%20for%20Pilot%20Training%20Department%20Director,%20VATMENA7",
+    title: "Pilot Training Department Director, VATMENA7",
+    department: "Pilot Training Department",
+    vacant: true,
+  },
 ];
