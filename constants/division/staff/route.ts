@@ -50,6 +50,13 @@ export const staff: Staff[] = [
     vacant: true,
   },
   {
+    name: "Dhiaeddine Keskes",
+    email:
+      "dhiaeddine.keskes@vatsim.me",
+    title: "Marketing Team Member, MENAMRKT",
+    department: "Marketing Department"
+  },
+  {
     name: "Shahzin Shajid",
     email: "shahzin.shajid@vatsim.me",
     title: "Membership Department Director, VATMENA5",
