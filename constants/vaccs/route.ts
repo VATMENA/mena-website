@@ -4,7 +4,7 @@ export const vaccs: VACC[] = [
     {
         name: "Arabian vACC",
         logoUri: "",
-        websiteUrl: "https://arabian-vacc.com/"
+        websiteUrl: "https://vatsim-arabian.com/"
     },
     {
         name: "Saudi Arabia vACC",
