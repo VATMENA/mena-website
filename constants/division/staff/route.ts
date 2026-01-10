@@ -11,9 +11,7 @@ export const staff: Staff[] = [
     name: "Nadeem Zabaneh",
     email: "nadeem.zabaneh@vatsim.me",
     title: "ATC Department Director, VATMENA3",
-    department: "ATC Department",
-    footerText:
-      "Please do not use the above email for data protection queries.",
+    department: "ATC Department"
   },
   {
     name: "Vacant",
@@ -42,24 +40,24 @@ export const staff: Staff[] = [
     department: "Marketing Department",
   },
   {
-    name: "Vacant",
+    name: "Dhiaeddine Keskes",
     email:
-      "jobs@vatsim.me?subject=Application%20for%20Marketing%20Department%20Deputy%20Director,%20VATMENA41",
+      "dhiaeddine.keskes@vatsim.me",
     title: "Marketing Department Deputy Director, VATMENA41",
     department: "Marketing Department",
-    vacant: true,
-  },
-  {
-    name: "Shahzin Shajid",
-    email: "shahzin.shajid@vatsim.me",
-    title: "Membership Department Director, VATMENA5",
-    department: "Membership Department",
   },
   {
     name: "Philipp Gottschalk",
     email: "philipp.gottschalk@vatsim.me",
+    title: "Membership Department Director, VATMENA5",
+    department: "Membership Department",
+  },
+  {
+    name: "Vacant",
+    email: "jobs@vatsim.me?subject=Application%20for%20Deputy%20Membership%20Department%20Director,%20VATMENA51",
     title: "Membership Department Deputy Director, VATMENA51",
     department: "Membership Department",
+    vacant:true
   },
   {
     name: "Kirollos Nashaat",
