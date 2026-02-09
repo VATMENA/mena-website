@@ -46,9 +46,9 @@ export const policies: Document[] = [
   {
     title: "OpenSkies Policy",
     locationUri:
-      "https://cdn.vatsim.me/policies/VATMENA_POL_OPSKY_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_OPSKY_R01-2024",
+      "https://cdn.vatsim.me/policies/VATMENA_POL_OPNSKY_01_2026.pdf",
+    lastUpdated: new Date("2026-03-15"),
+    id: "VATMENA_POL_OPNSKY_R01-2026",
   },
   {
     title: "Branding Guideline Policy",
