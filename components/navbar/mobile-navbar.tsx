@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Menu } from "lucide-react";
 import {
     Sheet,
@@ -16,19 +16,17 @@ function MobileNavbar() {
     const path = usePathname();
     const [open, setOpen] = useState(false);
 
-    useEffect(() => {        
-        let isSubscribed = true;
-        if (open) {
-            setOpen(false)
-        }
-
-        // cleanup
-        return () => { isSubscribed = false };
-    }, [path])
+    // Close the sheet whenever the route changes. Resetting state during render
+    // is React's recommended alternative to a setState-in-effect cascade.
+    const [renderedPath, setRenderedPath] = useState(path);
+    if (path !== renderedPath) {
+        setRenderedPath(path);
+        setOpen(false);
+    }
 
     return (
         <div>
-            <Sheet open={open} onOpenChange={() => setOpen(!open)}>
+            <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger><Menu /></SheetTrigger>
                 <SheetContent>
                     <NavbarItems mobile={true} />
