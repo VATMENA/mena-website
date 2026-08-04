@@ -11,6 +11,15 @@ function Navbar() {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      const pos = window.scrollY;
+      if (pos > 1) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     // cleanup
@@ -18,15 +27,6 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const handleScroll = () => {
-    const pos = window.scrollY;
-    if (pos > 1) {
-      setHasScrolled(true);
-    } else {
-      setHasScrolled(false);
-    }
-  };
 
   return (
     <div
