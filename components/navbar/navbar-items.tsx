@@ -2,7 +2,7 @@ import React from 'react'
 import { buttonVariants } from "../ui/button";
 import Link from "next/link";
 import { NavDropDown } from "./dropdown";
-import { FileDown, GraduationCap, Radar, Users2, School, BookCopy, Plane, UserCheck2 } from "lucide-react";
+import { FileDown, GraduationCap, Radar, Users2, School, BookCopy, Plane, UserCheck2, ClipboardList } from "lucide-react";
 import { BsDiscord } from "react-icons/bs";
 import { PiIdentificationBadge } from "react-icons/pi";
 import { links } from "@/lib/config";
@@ -82,14 +82,17 @@ function NavbarItems({ mobile }: { mobile?: boolean }) {
                         <DropdownMenuItem asChild>
                             <Link href="/controllers/visit-and-transfer"><BiTransfer className="mr-2 h-4 w-4" />Visit & Transfer</Link>
                         </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link href="/controllers/active-roster"><ClipboardList className="mr-2 h-4 w-4" />Active Roster</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                            <Link href="/controllers/active-validations"><UserCheck2 className="mr-2 h-4 w-4" />Active Validations</Link>
+                        </DropdownMenuItem>
                     </DropdownMenuGroup>
                     <DropdownMenuSeparator />
                     <DropdownMenuLabel>External Links</DropdownMenuLabel>
                     <DropdownMenuItem asChild>
                         <Link href="https://staff.vatsim.me/instructors" target="_blank"><FaChalkboardTeacher className="mr-2 h-4 w-4" />Training Staff</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                        <Link href="https://staff.vatsim.me/solos" target="_blank"><UserCheck2 className="mr-2 h-4 w-4" />Active Validations</Link>
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </NavDropDown>
