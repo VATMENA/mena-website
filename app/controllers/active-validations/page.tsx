@@ -10,15 +10,27 @@ import {
 } from "@/components/ui/table"
 import { Separator } from "@/components/ui/separator"
 import DataNotice from "@/components/vacc-data/data-notice"
-import { formatDate } from "@/lib/utils"
+import { cn, formatDate } from "@/lib/utils"
 import { getSolosForAllVaccs } from "@/lib/vatsim-api"
-import { SoloEndorsement, SoloList, VaccResult } from "@/types/vatsim-api"
+import { SoloEndorsement, SoloList, SoloStatus, VaccResult } from "@/types/vatsim-api"
 
 export const revalidate = 300;
+
+const statusOrder: Record<SoloStatus, number> = { active: 0, paused: 1, expired: 2 };
+
+const statusStyles: Record<SoloStatus, string> = {
+    active: "text-emerald-400",
+    paused: "text-orange-400",
+    expired: "text-red-400",
+};
 
 async function ActiveValidations() {
 
     const directory = await getSolosForAllVaccs();
+
+    // Live validations first, then the paused ones, then the expired history.
+    const byStatus = (solos: SoloEndorsement[]) =>
+        [...solos].sort((a, b) => statusOrder[a.status] - statusOrder[b.status]);
 
     return (
         <>
@@ -27,9 +39,10 @@ async function ActiveValidations() {
             </Header>
             <div className="container mx-auto">
                 <p className="mb-8">
-                    Solo validations currently held by controllers across the division, listed by vACC.
-                    A solo validation lets a controller staff a position they have not yet been fully
-                    rated for, for a limited number of days.
+                    Solo validations held by controllers across the division, listed by vACC. A solo
+                    validation lets a controller staff a position they have not yet been fully rated
+                    for, for a limited number of days. Paused and expired validations are listed
+                    alongside the active ones.
                 </p>
                 {!directory.ok
                     ?
@@ -45,22 +58,28 @@ async function ActiveValidations() {
                                 :
                                 result.data.solos.length < 1
                                     ?
-                                    <DataNotice>No active validations were found.</DataNotice>
+                                    <DataNotice>No validations were found.</DataNotice>
                                     :
                                     <Table>
                                         <TableHeader>
                                             <TableRow>
                                                 <TableHead className="w-1/6">CID</TableHead>
                                                 <TableHead>Position</TableHead>
+                                                <TableHead className="w-1/6">Status</TableHead>
                                                 <TableHead className="w-1/6">Expires</TableHead>
                                                 <TableHead className="w-1/6">Days Remaining</TableHead>
                                             </TableRow>
                                         </TableHeader>
                                         <TableBody className="text-start">
-                                            {result.data.solos.map((solo: SoloEndorsement) => (
+                                            {byStatus(result.data.solos).map((solo: SoloEndorsement) => (
                                                 <TableRow key={`${solo.cid}-${solo.position}-${solo.startDate}`}>
                                                     <TableCell className="font-medium">{solo.cid}</TableCell>
                                                     <TableCell>{solo.position}</TableCell>
+                                                    <TableCell>
+                                                        <span className={cn("font-medium capitalize", statusStyles[solo.status])}>
+                                                            {solo.status}
+                                                        </span>
+                                                    </TableCell>
                                                     <TableCell>{formatDate(solo.endDate)}</TableCell>
                                                     <TableCell>{solo.daysRemaining}</TableCell>
                                                 </TableRow>

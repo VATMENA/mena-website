@@ -114,7 +114,7 @@ async function forEachVacc<T>(
 }
 
 export function getSolosForAllVaccs() {
-    return forEachVacc<SoloList>((code) => `/vaccs/${code}/solos?status=active`);
+    return forEachVacc<SoloList>((code) => `/vaccs/${code}/solos?status=all`);
 }
 
 export function getRosterForAllVaccs() {
