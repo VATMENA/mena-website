@@ -29,16 +29,14 @@ async function ActiveRoster() {
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-1/6">CID</TableHead>
-                        <TableHead>Name</TableHead>
                         <TableHead className="w-1/6">Rating</TableHead>
-                        <TableHead className="w-2/6">Positions</TableHead>
+                        <TableHead>Positions</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody className="text-start">
                     {controllers.map((controller: RosterController) => (
                         <TableRow key={controller.cid}>
                             <TableCell className="font-medium">{controller.cid}</TableCell>
-                            <TableCell>{controller.name}</TableCell>
                             <TableCell>{controller.rating ?? "—"}</TableCell>
                             <TableCell>
                                 {controller.positions.length > 0 ? controller.positions.join(", ") : "—"}

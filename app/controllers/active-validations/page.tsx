@@ -51,9 +51,7 @@ async function ActiveValidations() {
                                         <TableHeader>
                                             <TableRow>
                                                 <TableHead className="w-1/6">CID</TableHead>
-                                                <TableHead>Name</TableHead>
-                                                <TableHead className="w-1/6">Position</TableHead>
-                                                <TableHead className="w-1/6">Type</TableHead>
+                                                <TableHead>Position</TableHead>
                                                 <TableHead className="w-1/6">Expires</TableHead>
                                                 <TableHead className="w-1/6">Days Remaining</TableHead>
                                             </TableRow>
@@ -62,9 +60,7 @@ async function ActiveValidations() {
                                             {result.data.solos.map((solo: SoloEndorsement) => (
                                                 <TableRow key={`${solo.cid}-${solo.position}-${solo.startDate}`}>
                                                     <TableCell className="font-medium">{solo.cid}</TableCell>
-                                                    <TableCell>{solo.name}</TableCell>
                                                     <TableCell>{solo.position}</TableCell>
-                                                    <TableCell>{solo.type}</TableCell>
                                                     <TableCell>{formatDate(solo.endDate)}</TableCell>
                                                     <TableCell>{solo.daysRemaining}</TableCell>
                                                 </TableRow>
