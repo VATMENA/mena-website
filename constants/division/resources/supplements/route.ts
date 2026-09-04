@@ -1,5 +1,16 @@
 import { Document } from "@/types/resources";
 
-// Supplements are published alongside the division policies. Content will be
-// added here as supplements are released.
-export const supplements: Document[] = [];
+export const supplements: Document[] = [
+  {
+    title: "Membership Supplement",
+    locationUri: "https://cdn.vatsim.me/supplements/VATMENA_SUP_MP_01-2026.pdf",
+    lastUpdated: new Date("2026-09-01"),
+    id: "VATMENA_SUP_MP_01-2026",
+  },
+  {
+    title: "ATC Training Policy Supplement",
+    locationUri: "https://cdn.vatsim.me/supplements/VATMENA_SUP_TRP_01-2026.pdf",
+    lastUpdated: new Date("2026-09-01"),
+    id: "VATMENA_SUP_TRP_01-2026",
+  },
+];
