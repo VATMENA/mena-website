@@ -41,7 +41,7 @@ export const staff: Staff[] = [
   },
   {
     name: "Abdur Rahman Aminuddin",
-    email: "operations@vatsim.me",
+    email: "abdurrahman.aminuddin@vatsim.me",
     title: "ATC Operations Team Member, MENAOPS",
     department: "ATC Operations Department",
   },
