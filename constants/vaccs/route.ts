@@ -17,9 +17,9 @@ export const vaccs: VACC[] = [
         websiteUrl: "https://khaleejvacc.net"
     },
     {
-        name: "Levant vACC",
+        name: "Kuwait & Iraq vACC",
         logoUri: "",
-        websiteUrl: "https://levantvacc.net/"
+        websiteUrl: "https://kuwait-iraqvacc.net/"
     },
     {
         name: "Egyptian vACC",
