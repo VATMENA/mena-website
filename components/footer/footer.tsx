@@ -59,11 +59,11 @@ function Footer() {
               Staff
             </Link>
             <Link
-              href={links.academy}
+              href={links.hq}
               target="_blank"
               className="hover:underline"
             >
-              Academy <BiLinkExternal className="inline" />
+              HQ <BiLinkExternal className="inline" />
             </Link>
             <Link
               href={links.discord}

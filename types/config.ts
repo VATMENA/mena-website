@@ -1,5 +1,5 @@
 export interface StaticLinks {
     discord: string;
-    academy: string;
+    hq: string;
     twitter: string;
 }

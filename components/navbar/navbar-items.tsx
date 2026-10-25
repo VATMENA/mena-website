@@ -43,7 +43,7 @@ function NavbarItems({ mobile }: { mobile?: boolean }) {
                     <DropdownMenuSeparator />
                     <DropdownMenuLabel>External Links</DropdownMenuLabel>
                     <DropdownMenuItem asChild>
-                        <Link href={links.academy} target="_blank"><GraduationCap className="mr-2 h-4 w-4" />Academy</Link>
+                        <Link href={links.hq} target="_blank"><GraduationCap className="mr-2 h-4 w-4" />HQ</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                         <Link href={links.discord} target="_blank"><BsDiscord className="mr-2 h-4 w-4" />Discord</Link>
