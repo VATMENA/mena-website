@@ -3,9 +3,9 @@ import { Document } from "@/types/resources";
 export const policies: Document[] = [
   {
     title: "Division Policy",
-    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_DP_R01-2024.pdf",
-    lastUpdated: new Date("2024-03-01"),
-    id: "VATMENA_POL_DD_R01-2024",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL%20_DP_01-2026.pdf",
+    lastUpdated: new Date("2026-09-12"),
+    id: "VATMENA_POL_DP_01-2026",
   },
   {
     title: "Membership Policy",
@@ -50,6 +50,12 @@ export const policies: Document[] = [
     lastUpdated: new Date("2026-03-15"),
     id: "VATMENA_POL_OPNSKY_R01-2026",
   },
+  {
+    title: "Events & Marketing Policy",
+    locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_EMP_2026-1.pdf",
+    lastUpdated: new Date("2026-08-01"),
+    id: "VATMENA_POL_EMP_2026-1",
+  },  
   {
     title: "Branding Guideline Policy",
     locationUri: "https://cdn.vatsim.me/policies/VATMENA_POL_BGP_R01-2024.pdf",

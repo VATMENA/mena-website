@@ -13,6 +13,16 @@ export const sectorFiles: SectorFile[] = [
         airspacePrefix: ["GM"]
     },
     {
+        name: "Maghreb vACC",
+        locationUri: "https://files.aero-nav.com/DAAA",
+        airspacePrefix: ["DA"]
+    },
+    {
+        name: "Maghreb vACC",
+        locationUri: "https://files.aero-nav.com/DTTC",
+        airspacePrefix: ["DT"]
+    },
+    {
         name: "Gulf FSS Control Stations",
         locationUri: "https://files.aero-nav.com/GULF",
         airspacePrefix: ["GULF"]
@@ -43,9 +53,14 @@ export const sectorFiles: SectorFile[] = [
         airspacePrefix: ["HE"]
     },
     {
-        name: "Arabian vACC - Bahrain",
+        name: "Khaleej vACC - Bahrain",
         locationUri: "https://files.aero-nav.com/OBBB",
-        airspacePrefix: ["OB", "OT"]
+        airspacePrefix: ["OB"]
+    },
+    {
+        name: "Khaleej vACC - Doha, Qatar",
+        locationUri: "https://files.aero-nav.com/OTDF",
+        airspacePrefix: ["OT"]
     },
     {
         name: "Arabian vACC - U.A.E",
@@ -58,12 +73,12 @@ export const sectorFiles: SectorFile[] = [
         airspacePrefix: ["OO"]
     },
     {
-        name: "vACC Saudi Arabia",
+        name: "Saudi Arabian vACC",
         locationUri: "https://files.aero-nav.com/OEJD",
         airspacePrefix: ["OE"]
     },
     {
-        name: "vACC Iran",
+        name: "Iran vACC",
         locationUri: "https://files.aero-nav.com/OIIX",
         airspacePrefix: ["OI"]
     },
@@ -73,12 +88,12 @@ export const sectorFiles: SectorFile[] = [
         airspacePrefix: ["OJ"]
     },
     {
-        name: "Kuwait vACC",
+        name: "Kuwait & Iraq vACC",
         locationUri: "https://files.aero-nav.com/OKAC",
         airspacePrefix: ["OK"]
     },
     {
-        name: "Iraq vACC",
+        name: "Kuwait & Iraq vACC",
         locationUri: "https://files.aero-nav.com/ORBB",
         airspacePrefix: ["OR"]
     },
