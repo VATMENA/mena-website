@@ -42,7 +42,7 @@ function BecomeAController() {
                         </p>
                         <p>
                             You will then need to complete all of the examinations assigned to you in the&nbsp;
-                            <Link className="italic font-bold hover:underline text-primary" target="_blank" href="https://academy.vatsim.me/">
+                            <Link className="italic font-bold hover:underline text-primary" target="_blank" href="https://hq.vatsim.me/">
                                 academy <BiLinkExternal className="inline" />
                             </Link>.&nbsp;
                             Once those are complete, you can start practical training with your vACC assigned mentor.

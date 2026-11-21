@@ -1,8 +1,8 @@
 import { StaticLinks } from "@/types/config";
 
 export const links: StaticLinks = {
-    discord: "https://community.vatsim.net/login",
-    academy: "https://hq.vatsim.me/",
+    discord: "https://community.vatsim.net",
+    hq: "https://hq.vatsim.me/",
     twitter: "https://twitter.com/vatmena"
 }
 

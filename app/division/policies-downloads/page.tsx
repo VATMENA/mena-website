@@ -16,6 +16,7 @@ import { Separator } from "@/components/ui/separator"
 import { BiLinkExternal } from "react-icons/bi"
 import { months } from "@/lib/config"
 import { policies } from "@/constants/division/resources/policies/route"
+import { supplements } from "@/constants/division/resources/supplements/route"
 import { meetingMinutes } from "@/constants/division/resources/meeting-minutes/route"
 import { sectorFiles } from "@/constants/division/resources/sector-files/route"
 
@@ -26,6 +27,10 @@ async function getPolicies(): Promise<Document[]> {
     // }
     // return res.json();
     return policies;
+}
+
+async function getSupplements(): Promise<Document[]> {
+    return supplements;
 }
 
 async function getMeetings(): Promise<Document[]> {
@@ -49,6 +54,7 @@ async function getSectorFiles(): Promise<SectorFile[]> {
 async function PoliciesAndDownloads() {
 
     const policies = await getPolicies();
+    const supplements = await getSupplements();
     const meetings = await getMeetings();
     const sectorFiles = await getSectorFiles();
 
@@ -98,6 +104,46 @@ async function PoliciesAndDownloads() {
                                         <TableCell className="text-start">
                                             <Link
                                                 href={policy.locationUri}
+                                                target="_blank"
+                                                className={cn(buttonVariants({ variant: "default" }), "w-full")}
+                                            >
+                                                Open<BiLinkExternal className="ms-1" />
+                                            </Link>
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    }
+                </div>
+                <Separator className="my-12" />
+                <div id="supplements">
+                    <h2 className="text-3xl font-bold">Supplements</h2>
+                    {supplements.length < 1 ?
+                        <div className="mt-3"><em>No supplements were found.</em></div>
+                        :
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead className="w-1/6">ID</TableHead>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead className="w-1/6">Last Updated</TableHead>
+                                    <TableHead className="text-start w-1/6">Link</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody className="text-start">
+                                {supplements.map((supplement: Document, index: number) => (
+                                    <TableRow key={index}>
+                                        <TableCell className="font-medium">{supplement.id}</TableCell>
+                                        <TableCell>{supplement.title}</TableCell>
+                                        <TableCell>
+                                            {new Date(supplement.lastUpdated).getDate()}&nbsp;
+                                            {months[new Date(supplement.lastUpdated).getMonth()]}&nbsp;
+                                            {new Date(supplement.lastUpdated).getFullYear()}
+                                        </TableCell>
+                                        <TableCell className="text-start">
+                                            <Link
+                                                href={supplement.locationUri}
                                                 target="_blank"
                                                 className={cn(buttonVariants({ variant: "default" }), "w-full")}
                                             >

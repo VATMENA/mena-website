@@ -59,11 +59,11 @@ function Footer() {
               Staff
             </Link>
             <Link
-              href={links.academy}
+              href={links.hq}
               target="_blank"
               className="hover:underline"
             >
-              Academy <BiLinkExternal className="inline" />
+              HQ <BiLinkExternal className="inline" />
             </Link>
             <Link
               href={links.discord}
@@ -124,12 +124,14 @@ function Footer() {
             >
               Training Staff <BiLinkExternal className="inline" />
             </Link>
+            <Link href="/controllers/active-roster" className="hover:underline">
+              Active Roster
+            </Link>
             <Link
-              href="https://staff.vatsim.me/solos"
-              target="_blank"
+              href="/controllers/active-validations"
               className="hover:underline"
             >
-              Active Validations <BiLinkExternal className="inline" />
+              Active Validations
             </Link>
           </nav>
         </div>
