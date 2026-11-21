@@ -58,7 +58,7 @@ export const sectorFiles: SectorFile[] = [
         airspacePrefix: ["OB"]
     },
     {
-        name: "Khaleej vACC - Doha, Qatar",
+        name: "Khaleej vACC - Doha",
         locationUri: "https://files.aero-nav.com/OTDF",
         airspacePrefix: ["OT"]
     },
